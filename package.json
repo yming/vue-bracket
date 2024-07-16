@@ -1,14 +1,14 @@
 {
-  "name": "vue-tournament-bracket",
-  "version": "3.0.0",
+  "name": "vue-brackets",
+  "version": "1.0.0",
   "license": "MIT",
-  "repository": "https://github.com/kamilwylegala/vue-tournament-bracket",
-  "author": "Kamil Wylegała <kamil.wylegala@gmail.com>",
+  "repository": "https://github.com/yming/vue-bracket",
+  "author": "Yang <ym1161@gmail.com>",
   "description": "Vue component for rendering single elemination tournament brackets.",
-  "main": "dist/vue-tournament-bracket.common.js",
+  "main": "dist/vue-brackets.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vue-tournament-bracket ./src/Bracket.vue",
+    "build": "vue-cli-service build --target lib --name vue-brackets ./src/Bracket.vue",
     "lint": "vue-cli-service lint",
     "eslint": "eslint src test --ignore-pattern *bundle* --ext js,vue",
     "test": "mocha --require should test/**/*.test.js"
