@@ -10,12 +10,16 @@ module.exports = {
         let previousRound = [];
 
         for (let i = 0; i < totalRounds; i++) {
-            currentRound = rounds[i].games.map((game) => {
+            currentRound = rounds[i].games.map((game, index) => {
                 return {
+                    round: i,
+                    gameIndex: index,
                     type: rounds[i].type || 'elimination',
                     // ...game,
-                    players: Object.values(game),
-                    title: "round " + i,
+                    players: Object.values(game.players),
+                    top: game.top,
+                    bottom: game.bottom,
+                    title: rounds[i].title || ("Round " + i),
                     // children games
                     games: [],
                     hasParent: !!rounds[i + 1],

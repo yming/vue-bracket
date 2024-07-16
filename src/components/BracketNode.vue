@@ -1,6 +1,8 @@
 <template>
-    <div class="vtb-item" v-if="playersArePresent">
+    <div class="vtb-item" :class="isTopLeft(bracketNode)" v-if="playersArePresent">
         <div :class="getBracketNodeClass(bracketNode)">
+            <!-- Round Title -->
+            <div class="round-title" v-if="!bracketNode.gameIndex && getBracketNodeClass(bracketNode) === 'vtb-item-parent'">{{ bracketNode.title }}</div>
             <game-players
                 :bracket-node="bracketNode"
                 :highlighted-player-id="highlightedPlayerId"
@@ -19,8 +21,10 @@
             </game-players>
         </div>
 
-        <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children" :class="getRoundRobinClass(bracketNode.games[0])">
+        <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children" :class="[getRoundRobinClass(bracketNode.games[0])]">
             <div class="vtb-item-child" v-if="bracketNode.games[0]">
+                <!-- Round Title -->
+                <div class="round-title" v-if="!bracketNode.games[0].gameIndex && (bracketNode.games[0].round === 0)">{{ bracketNode.games[0].title }}</div>
                 <bracket-node
                     :bracket-node="bracketNode.games[0]"
                     :highlighted-player-id="highlightedPlayerId"
@@ -74,9 +78,9 @@
                 return this.bracketNode.players[1];
                 // return this.bracketNode.player1 && this.bracketNode.player1;
             },
-            emptyItemPresent() {
-                return this.bracketNode.games.type === 'roundRobin'
-            }
+            // emptyItemPresent() {
+            //     return this.bracketNode.games.type === 'roundRobin'
+            // }
         },
         methods: {
             getBracketNodeClass(bracketNode) {
@@ -104,7 +108,15 @@
                 return clazz;
             },
             getRoundRobinClass(bracketNode) {
-                return bracketNode.type === 'roundRobin' ? 'round-robin' : '';
+                return bracketNode && bracketNode.type === 'roundRobin' ? 'round-robin' : '';
+            },
+
+            isTopLeft(bracketNode) {
+                if(bracketNode.round === 0 && bracketNode.gameIndex === 0) {
+                    return 'top-left';
+                } else {
+                    return '';
+                }
             },
             highlightPlayer(playerId) {
                 this.$emit("onSelectedPlayer", playerId);
@@ -178,6 +190,8 @@
         flex-direction: column;
         justify-content: center;
 
+        position: relative;
+
         /* 纵向通长虚线 */
         padding-right: 24px;
         margin-right: -25px;
@@ -236,11 +250,28 @@
         display: none;
     }
 
+    .vtb-item.top-left .vtb-item-child:before {
+        display: none;
+    }
+
     .round-robin .vtb-item-child:after {
         height: 200%;
     }
 
     .empty-item {
         height: 20px;
+    }
+
+    .top-left {
+        padding-top: 20px;
+    }
+
+    .round-title {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+        color: rgb(176, 173, 173);
     }
 </style>
