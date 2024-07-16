@@ -7,6 +7,9 @@
                 @onSelectedPlayer="highlightPlayer"
                 @onDeselectedPlayer="unhighlightPlayer"
             >
+                <template #player-extension-top="{ match }">
+                    <slot name="player-extension-top" :match="match" />
+                </template>
                 <template #player="{ player }">
                     <slot name="player" :player="player" />
                 </template>
@@ -16,7 +19,7 @@
             </game-players>
         </div>
 
-        <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children">
+        <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children" :class="getRoundRobinClass(bracketNode.games[0])">
             <div class="vtb-item-child" v-if="bracketNode.games[0]">
                 <bracket-node
                     :bracket-node="bracketNode.games[0]"
@@ -24,6 +27,9 @@
                     @onSelectedPlayer="highlightPlayer"
                     @onDeselectedPlayer="unhighlightPlayer"
                 >
+                    <template #player-extension-top="{ match }">
+                        <slot name="player-extension-top" :match="match" />
+                    </template>
                     <template #player="{ player }">
                         <slot name="player" :player="player" />
                     </template>
@@ -39,6 +45,9 @@
                     @onSelectedPlayer="highlightPlayer"
                     @onDeselectedPlayer="unhighlightPlayer"
                 >
+                    <template #player-extension-top="{ match }">
+                        <slot name="player-extension-top" :match="match" />
+                    </template>
                     <template #player="{ player }">
                         <slot name="player" :player="player" />
                     </template>
@@ -49,6 +58,8 @@
             </div>
         </div>
     </div>
+    <!-- <div class="vtb-item empty-item" v-else-if="emptyItemPresent"></div> -->
+    <!-- <div class="vtb-item empty-item" v-else></div> -->
 </template>
 
 <script>
@@ -60,8 +71,12 @@
         props: ["bracketNode", "highlightedPlayerId"],
         computed: {
             playersArePresent() {
-                return this.bracketNode.player1 && this.bracketNode.player1;
+                return this.bracketNode.players[1];
+                // return this.bracketNode.player1 && this.bracketNode.player1;
             },
+            emptyItemPresent() {
+                return this.bracketNode.games.type === 'roundRobin'
+            }
         },
         methods: {
             getBracketNodeClass(bracketNode) {
@@ -87,6 +102,9 @@
                 }
 
                 return clazz;
+            },
+            getRoundRobinClass(bracketNode) {
+                return bracketNode.type === 'roundRobin' ? 'round-robin' : '';
             },
             highlightPlayer(playerId) {
                 this.$emit("onSelectedPlayer", playerId);
@@ -159,6 +177,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        /* 纵向通长虚线 */
+        padding-right: 24px;
+        margin-right: -25px;
+        border-right: 1px dashed #33333330;
     }
 
     .vtb-item-child {
@@ -168,6 +191,15 @@
         margin-top: 10px;
         margin-bottom: 10px;
         position: relative;
+    }
+
+    /* 保证纵向竖线的高度一致 */
+    .vtb-item-children>.vtb-item-child:first-child {
+        margin-top: 0;
+    }
+
+    .vtb-item-children>.vtb-item-child:last-child {
+        margin-bottom: 0;
     }
 
     .vtb-item-child:before {
@@ -197,5 +229,18 @@
 
     .vtb-item-child:only-child:after {
         display: none;
+    }
+
+    /* For Round Robins  */
+    .vtb-item-child:empty:before {
+        display: none;
+    }
+
+    .round-robin .vtb-item-child:after {
+        height: 200%;
+    }
+
+    .empty-item {
+        height: 20px;
     }
 </style>

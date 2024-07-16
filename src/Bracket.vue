@@ -6,6 +6,9 @@
             @onDeselectedPlayer="unhighlightPlayer"
             :highlighted-player-id="highlightedPlayerId"
         >
+            <template #player-extension-top="{ match }">
+                <slot name="player-extension-top" :match="match" />
+            </template>
             <template #player="{ player }">
                 <slot name="player" :player="player" />
             </template>

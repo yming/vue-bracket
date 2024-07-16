@@ -1,7 +1,17 @@
 <template>
     <div class="vtb-item-players">
+        <slot name="player-extension-top" :match="matchProperties" />
         <div>
             <div
+                v-for="player in bracketNode.players"
+                :key="player.id"
+                :class="['vtb-player', getPlayerClass(player)]"
+                @mouseover="highlightPlayer(player.id)"
+                @mouseleave="unhighlightPlayer"
+            >
+                <slot :player="player" name="player" />
+            </div>
+            <!-- <div
                 :class="['vtb-player', 'vtb-player1', getPlayerClass(bracketNode.player1)]"
                 @mouseover="highlightPlayer(bracketNode.player1.id)"
                 @mouseleave="unhighlightPlayer"
@@ -15,7 +25,7 @@
                 @mouseleave="unhighlightPlayer"
             >
                 <slot :player="bracketNode.player2" name="player" />
-            </div>
+            </div> -->
         </div>
         <slot name="player-extension-bottom" :match="matchProperties" />
     </div>

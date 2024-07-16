@@ -12,8 +12,11 @@ module.exports = {
         for (let i = 0; i < totalRounds; i++) {
             currentRound = rounds[i].games.map((game) => {
                 return {
-                    ...game,
+                    type: rounds[i].type || 'elimination',
+                    // ...game,
+                    players: Object.values(game),
                     title: "round " + i,
+                    // children games
                     games: [],
                     hasParent: !!rounds[i + 1],
                 };
