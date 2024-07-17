@@ -1,7 +1,7 @@
 <template>
     <div class="vtb-item-players">
         <slot name="player-extension-top" :match="matchProperties" />
-        <div>
+        <div class="vtb-players-box">
             <div
                 v-for="player in bracketNode.players"
                 :key="player.id"

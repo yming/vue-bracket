@@ -149,29 +149,54 @@
 
     .vtb-item-players {
         flex-direction: column;
-        background-color: #999999;
+        background-color: white;
         margin: 0;
-        color: white;
+        color: black;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px 0px #dbdfdf;
+    }
+
+    .vtb-item-players .vtb-players-box {
+        
     }
 
     .vtb-item-players .vtb-player {
         padding: 10px;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    .vtb-item-players .vtb-player:after {
+        content: '';
+        bottom: 0; left: 10%; right: 0;
+        width: 80%;
+        height: 1px;
+        position: absolute;
+        z-index: 1;
+        background: #eeededea;
+    }
+
+    .vtb-item-players .vtb-player:last-child:after {
+        display: none;
     }
 
     .vtb-item-players .winner {
-        background-color: darkgreen;
+        /* background-color: darkgreen; */
     }
 
     .vtb-item-players .defeated {
-        background-color: firebrick;
+        /* background-color: firebrick; */
+        color: rgb(147, 146, 146);
     }
 
     .vtb-item-players .winner.highlight {
         background-color: darkseagreen;
+        color: white;
     }
 
     .vtb-item-players .defeated.highlight {
         background-color: indianred;
+        color: white;
     }
 
     .vtb-item-parent:after {
@@ -181,7 +206,7 @@
         height: 2px;
         left: 0;
         top: 50%;
-        background-color: gray;
+        background-color: rgb(170, 169, 169);
         transform: translateX(-100%);
     }
 
@@ -219,7 +244,7 @@
     .vtb-item-child:before {
         content: "";
         position: absolute;
-        background-color: gray;
+        background-color: rgb(170, 169, 169);
         right: 0;
         top: 50%;
         transform: translateX(100%);
@@ -230,7 +255,7 @@
     .vtb-item-child:after {
         content: "";
         position: absolute;
-        background-color: gray;
+        background-color: rgb(170, 169, 169);
         right: -25px;
         height: calc(50% + 22px);
         width: 2px;
@@ -272,6 +297,6 @@
         text-align: center;
         font-size: 13px;
         width: 100%;
-        color: rgb(176, 173, 173);
+        color: rgb(113, 113, 113);
     }
 </style>
