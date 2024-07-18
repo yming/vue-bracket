@@ -1,5 +1,5 @@
 <template>
-    <div class="vtb-wrapper" v-if="recursiveBracket" @click="unhighlightPlayer">
+    <div class="vtb-wrapper" v-if="recursiveBracket">
         <bracket-node
             :bracket-node="recursiveBracket"
             @onSelectedPlayer="highlightPlayer"

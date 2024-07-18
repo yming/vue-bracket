@@ -176,6 +176,10 @@
         background: #eeededea;
     }
 
+    .vtb-item-players .highlight:after {
+        display: none;
+    }
+
     .vtb-item-players .vtb-player:last-child:after {
         display: none;
     }
