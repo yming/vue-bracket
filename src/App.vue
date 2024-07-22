@@ -3,8 +3,8 @@
         <template #player-extension-top="{ match }">
             <div v-if="match.top" class="top-box">{{ match.top }}</div>
         </template>
-        <template #player="{ player }">
-            {{ player.name }}
+        <template #player="{ player, match }">
+            {{ player.name }}{{ match.single || '' }}
         </template>
         <template #player-extension-bottom="{ match }">
             <div v-if="match.bottom" class="bottom-box">{{ match.bottom }}</div>
@@ -70,6 +70,7 @@ const rounds = [
         type: "roundRobin",
         games: [
             {
+                single: 'single',
                 players: [
                     { id: "1", name: "Competitor 1", winner: true },
                     { id: "2", name: "Competitor 2", winner: false },
@@ -117,6 +118,7 @@ const rounds = [
                     { id: "1", name: "Competitor 1", winner: false },
                     { id: "12", name: "Competitor 12", winner: true },
                 ],
+                scores: [1,2,3,4],
                 bottom: '6:3 2:6 7:5'
             },
             {

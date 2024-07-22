@@ -9,7 +9,7 @@
                 @mouseover="highlightPlayer(player.id)"
                 @mouseleave="unhighlightPlayer"
             >
-                <slot :player="player" name="player" />
+                <slot :player="player" :match="matchProperties" name="player" />
             </div>
             <!-- <div
                 :class="['vtb-player', 'vtb-player1', getPlayerClass(bracketNode.player1)]"

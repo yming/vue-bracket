@@ -9,8 +9,8 @@
             <template #player-extension-top="{ match }">
                 <slot name="player-extension-top" :match="match" />
             </template>
-            <template #player="{ player }">
-                <slot name="player" :player="player" />
+            <template #player="{ player, match }">
+                <slot name="player" :player="player" :match="match" />
             </template>
             <template #player-extension-bottom="{ match }">
                 <slot name="player-extension-bottom" :match="match" />
