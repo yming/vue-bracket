@@ -231,8 +231,8 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 2px;
+        margin-bottom: 2px;
         position: relative;
     }
 

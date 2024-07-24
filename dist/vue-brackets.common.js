@@ -107,7 +107,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".vtb-wrapper{display:-webkit-box;displ
 
 /***/ }),
 
-/***/ 3008:
+/***/ 5036:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -121,7 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".vtb-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.vtb-item p{padding:20px;margin:0;background-color:#999}.vtb-item-parent{position:relative;margin-left:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.vtb-item-players{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#fff;margin:0;color:#000;border-radius:5px;-webkit-box-shadow:2px 2px 6px 0 #dbdfdf;box-shadow:2px 2px 6px 0 #dbdfdf}.vtb-item-players .vtb-player{padding:10px;white-space:nowrap;position:relative}.vtb-item-players .vtb-player:after{content:\"\";bottom:0;left:10%;right:0;width:80%;height:1px;position:absolute;z-index:1;background:#eeededea}.vtb-item-players .highlight:after,.vtb-item-players .vtb-player:last-child:after{display:none}.vtb-item-players .defeated{color:#939292}.vtb-item-players .winner.highlight{background-color:#8fbc8f;color:#fff}.vtb-item-players .defeated.highlight{background-color:#cd5c5c;color:#fff}.vtb-item-parent:after{position:absolute;content:\"\";width:25px;height:2px;left:0;top:50%;background-color:#aaa9a9;-webkit-transform:translateX(-100%);transform:translateX(-100%)}.vtb-item-children{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-right:24px;margin-right:-25px;border-right:1px dashed #33333330}.vtb-item-child,.vtb-item-children{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.vtb-item-child{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-top:10px;margin-bottom:10px}.vtb-item-children>.vtb-item-child:first-child{margin-top:0}.vtb-item-children>.vtb-item-child:last-child{margin-bottom:0}.vtb-item-child:before{right:0;-webkit-transform:translateX(100%);transform:translateX(100%);width:25px;height:2px}.vtb-item-child:after,.vtb-item-child:before{content:\"\";position:absolute;background-color:#aaa9a9;top:50%}.vtb-item-child:after{right:-25px;height:calc(50% + 22px);width:2px}.vtb-item-child:last-child:after{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.vtb-item-child:empty:before,.vtb-item-child:only-child:after,.vtb-item.top-left .vtb-item-child:before{display:none}.round-robin .vtb-item-child:after{height:200%}.empty-item{height:20px}.top-left{padding-top:20px}.round-title{position:absolute;top:0;text-align:center;font-size:13px;width:100%;color:#717171}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".vtb-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.vtb-item p{padding:20px;margin:0;background-color:#999}.vtb-item-parent{position:relative;margin-left:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.vtb-item-players{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#fff;margin:0;color:#000;border-radius:5px;-webkit-box-shadow:2px 2px 6px 0 #dbdfdf;box-shadow:2px 2px 6px 0 #dbdfdf}.vtb-item-players .vtb-player{padding:10px;white-space:nowrap;position:relative}.vtb-item-players .vtb-player:after{content:\"\";bottom:0;left:10%;right:0;width:80%;height:1px;position:absolute;z-index:1;background:#eeededea}.vtb-item-players .highlight:after,.vtb-item-players .vtb-player:last-child:after{display:none}.vtb-item-players .defeated{color:#939292}.vtb-item-players .winner.highlight{background-color:#8fbc8f;color:#fff}.vtb-item-players .defeated.highlight{background-color:#cd5c5c;color:#fff}.vtb-item-parent:after{position:absolute;content:\"\";width:25px;height:2px;left:0;top:50%;background-color:#aaa9a9;-webkit-transform:translateX(-100%);transform:translateX(-100%)}.vtb-item-children{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-right:24px;margin-right:-25px;border-right:1px dashed #33333330}.vtb-item-child,.vtb-item-children{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.vtb-item-child{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-top:2px;margin-bottom:2px}.vtb-item-children>.vtb-item-child:first-child{margin-top:0}.vtb-item-children>.vtb-item-child:last-child{margin-bottom:0}.vtb-item-child:before{right:0;-webkit-transform:translateX(100%);transform:translateX(100%);width:25px;height:2px}.vtb-item-child:after,.vtb-item-child:before{content:\"\";position:absolute;background-color:#aaa9a9;top:50%}.vtb-item-child:after{right:-25px;height:calc(50% + 22px);width:2px}.vtb-item-child:last-child:after{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.vtb-item-child:empty:before,.vtb-item-child:only-child:after,.vtb-item.top-left .vtb-item-child:before{display:none}.round-robin .vtb-item-child:after{height:200%}.empty-item{height:20px}.top-left{padding-top:20px}.round-title{position:absolute;top:0;text-align:center;font-size:13px;width:100%;color:#717171}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -355,19 +355,19 @@ var update = add("7c50c94a", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 5592:
+/***/ 5578:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(3008);
+var content = __webpack_require__(5036);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(8024)/* ["default"] */ .c)
-var update = add("6c8e0b2a", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("20d6b02b", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -5709,11 +5709,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 ;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=template&id=35604f1e
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=template&id=17dcdc59
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=template&id=34c9d732
 
 
 
-var BracketNodevue_type_template_id_17dcdc59_hoisted_1 = {
+var BracketNodevue_type_template_id_34c9d732_hoisted_1 = {
   key: 0,
   class: "round-title"
 };
@@ -5729,7 +5729,7 @@ var _hoisted_4 = {
   key: 1,
   class: "vtb-item-child"
 };
-function BracketNodevue_type_template_id_17dcdc59_render(_ctx, _cache, $props, $setup, $data, $options) {
+function BracketNodevue_type_template_id_34c9d732_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_game_players = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("game-players");
   var _component_bracket_node = (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.resolveComponent)("bracket-node", true);
   return $options.playersArePresent ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", {
@@ -5737,7 +5737,7 @@ function BracketNodevue_type_template_id_17dcdc59_render(_ctx, _cache, $props, $
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)(["vtb-item", $options.isTopLeft($props.bracketNode)])
   }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementVNode)("div", {
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.normalizeClass)($options.getBracketNodeClass($props.bracketNode))
-  }, [!$props.bracketNode.gameIndex && $options.getBracketNodeClass($props.bracketNode) === 'vtb-item-parent' ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", BracketNodevue_type_template_id_17dcdc59_hoisted_1, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($props.bracketNode.title), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createVNode)(_component_game_players, {
+  }, [!$props.bracketNode.gameIndex && $options.getBracketNodeClass($props.bracketNode) === 'vtb-item-parent' ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createElementBlock)("div", BracketNodevue_type_template_id_34c9d732_hoisted_1, (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.toDisplayString)($props.bracketNode.title), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createVNode)(_component_game_players, {
     "bracket-node": $props.bracketNode,
     "highlighted-player-id": $props.highlightedPlayerId,
     onOnSelectedPlayer: $options.highlightPlayer,
@@ -5823,7 +5823,7 @@ function BracketNodevue_type_template_id_17dcdc59_render(_ctx, _cache, $props, $
     _: 3
   }, 8, ["bracket-node", "highlighted-player-id", "onOnSelectedPlayer", "onOnDeselectedPlayer"])])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true)], 2)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true)], 2)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true);
 }
-;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=template&id=17dcdc59
+;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=template&id=34c9d732
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/GamePlayers.vue?vue&type=template&id=23f7029d
 
@@ -5960,9 +5960,9 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.c)(GamePlayersvue_
 });
 ;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=style&index=0&id=17dcdc59&lang=css
-var BracketNodevue_type_style_index_0_id_17dcdc59_lang_css = __webpack_require__(5592);
-;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=style&index=0&id=17dcdc59&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=style&index=0&id=34c9d732&lang=css
+var BracketNodevue_type_style_index_0_id_34c9d732_lang_css = __webpack_require__(5578);
+;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=style&index=0&id=34c9d732&lang=css
 
 ;// CONCATENATED MODULE: ./src/components/BracketNode.vue
 
@@ -5972,7 +5972,7 @@ var BracketNodevue_type_style_index_0_id_17dcdc59_lang_css = __webpack_require__
 ;
 
 
-const BracketNode_exports_ = /*#__PURE__*/(0,exportHelper/* default */.c)(BracketNodevue_type_script_lang_js, [['render',BracketNodevue_type_template_id_17dcdc59_render]])
+const BracketNode_exports_ = /*#__PURE__*/(0,exportHelper/* default */.c)(BracketNodevue_type_script_lang_js, [['render',BracketNodevue_type_template_id_34c9d732_render]])
 
 /* harmony default export */ var BracketNode = (BracketNode_exports_);
 // EXTERNAL MODULE: ./src/components/recursiveBracket.js
