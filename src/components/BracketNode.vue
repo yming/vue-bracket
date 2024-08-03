@@ -22,7 +22,7 @@
         </div>
 
         <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children" :class="[getRoundRobinClass(bracketNode.games[0])]">
-            <div class="vtb-item-child" v-if="bracketNode.games[0]" :class="[isPlaceHolder(bracketNode.games[0])]">
+            <div class="vtb-item-child" v-if="bracketNode.games[0]" :class="[isPlaceHolder(bracketNode.games[0]), isNoChildren(bracketNode.games[0])]">
                 <!-- Round Title -->
                 <div class="round-title" v-if="!bracketNode.games[0].gameIndex && (bracketNode.games[0].round === 0)">{{ bracketNode.games[0].title }}</div>
                 <bracket-node
@@ -42,7 +42,7 @@
                     </template>
                 </bracket-node>
             </div>
-            <div class="vtb-item-child" v-if="bracketNode.games[1]" :class="[isPlaceHolder(bracketNode.games[1])]">
+            <div class="vtb-item-child" v-if="bracketNode.games[1]" :class="[isPlaceHolder(bracketNode.games[1]), isNoChildren(bracketNode.games[1])]">
                 <bracket-node
                     :bracket-node="bracketNode.games[1]"
                     :highlighted-player-id="highlightedPlayerId"
@@ -119,6 +119,9 @@
             isPlaceHolder(bracketNode) {
                 return bracketNode.placeholder ? 'placeholder' : '';
             },
+            isNoChildren(bracketNode) {
+                return bracketNode.games.length === 0 ? 'vtb-item-leaf' : '';
+            },
             highlightPlayer(playerId) {
                 this.$emit("onSelectedPlayer", playerId);
             },
@@ -154,7 +157,7 @@
         margin: 0;
         color: black;
         border-radius: 5px;
-        box-shadow: 2px 2px 6px 0px #dbdfdf;
+        border: 1px solid #e5e4e4;
     }
 
     .vtb-item-players .vtb-player {
@@ -224,18 +227,9 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
-        margin-top: 2px;
-        margin-bottom: 2px;
+        /* margin-top: 2px;
+        margin-bottom: 2px; */
         position: relative;
-    }
-
-    /* 保证纵向竖线的高度一致 */
-    .vtb-item-children>.vtb-item-child:first-child {
-        margin-top: 0;
-    }
-
-    .vtb-item-children>.vtb-item-child:last-child {
-        margin-bottom: 0;
     }
 
     .vtb-item-child:before {
@@ -266,6 +260,8 @@
     .vtb-item-child:only-child:after {
         display: none;
     }
+
+
 
     /* For Round Robins  */
     .vtb-item-child:empty:before {
@@ -308,5 +304,35 @@
         font-size: 13px;
         width: 100%;
         color: rgb(113, 113, 113);
+    }
+
+    /* 签表覆盖样式 */
+    .vtb-item-leaf {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .round-robin .vtb-item-leaf {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .round-robin .vtb-item-child {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .round-robin .vtb-item-child:after {
+        height: 100% !important;
+        top: 0;
+        background-color: rgb(170, 169, 169);;
+    }
+
+    .top-left .vtb-item-child:after {
+        top: 20px;
+    }
+
+    .round-robin .vtb-item-child:last-child:after {
+        transform: translateY(0%);
     }
 </style>
