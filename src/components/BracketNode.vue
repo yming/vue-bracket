@@ -1,5 +1,5 @@
 <template>
-    <div class="vtb-item" :class="isTopLeft(bracketNode)" v-if="playersArePresent">
+    <div class="vtb-item" :class="[isTopLeft(bracketNode)]" v-if="playersArePresent">
         <div :class="getBracketNodeClass(bracketNode)">
             <!-- Round Title -->
             <div class="round-title" v-if="!bracketNode.gameIndex && getBracketNodeClass(bracketNode) === 'vtb-item-parent'">{{ bracketNode.title }}</div>
@@ -22,7 +22,7 @@
         </div>
 
         <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children" :class="[getRoundRobinClass(bracketNode.games[0])]">
-            <div class="vtb-item-child" v-if="bracketNode.games[0]">
+            <div class="vtb-item-child" v-if="bracketNode.games[0]" :class="[isPlaceHolder(bracketNode.games[0])]">
                 <!-- Round Title -->
                 <div class="round-title" v-if="!bracketNode.games[0].gameIndex && (bracketNode.games[0].round === 0)">{{ bracketNode.games[0].title }}</div>
                 <bracket-node
@@ -42,7 +42,7 @@
                     </template>
                 </bracket-node>
             </div>
-            <div class="vtb-item-child" v-if="bracketNode.games[1]">
+            <div class="vtb-item-child" v-if="bracketNode.games[1]" :class="[isPlaceHolder(bracketNode.games[1])]">
                 <bracket-node
                     :bracket-node="bracketNode.games[1]"
                     :highlighted-player-id="highlightedPlayerId"
@@ -62,8 +62,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="vtb-item empty-item" v-else-if="emptyItemPresent"></div> -->
-    <!-- <div class="vtb-item empty-item" v-else></div> -->
 </template>
 
 <script>
@@ -117,6 +115,9 @@
                 } else {
                     return '';
                 }
+            },
+            isPlaceHolder(bracketNode) {
+                return bracketNode.placeholder ? 'placeholder' : '';
             },
             highlightPlayer(playerId) {
                 this.$emit("onSelectedPlayer", playerId);
@@ -287,8 +288,21 @@
         height: 200%;
     }
 
-    .empty-item {
+    /* 小组循环填充位 占位用 */
+    .round-robin .placeholder {
         height: 20px;
+    }
+
+    .round-robin .placeholder::before {
+        display: none;
+    }
+
+    .round-robin .placeholder .vtb-item {
+        opacity: 0;
+    }
+
+    .round-robin .placeholder .vtb-item-child:before  {
+        display: none;
     }
 
     .top-left {
