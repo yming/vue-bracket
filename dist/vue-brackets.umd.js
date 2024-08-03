@@ -117,7 +117,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".vtb-wrapper{display:-webkit-box;displ
 
 /***/ }),
 
-/***/ 9104:
+/***/ 4952:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,7 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".vtb-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.vtb-item p{padding:20px;margin:0;background-color:#999}.vtb-item-parent{position:relative;margin-left:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.vtb-item-players{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#fff;margin:0;color:#000;border-radius:5px;-webkit-box-shadow:2px 2px 6px 0 #dbdfdf;box-shadow:2px 2px 6px 0 #dbdfdf}.vtb-item-players .vtb-player{padding:10px;white-space:nowrap;position:relative}.vtb-item-players .vtb-player:after{content:\"\";bottom:0;left:10%;right:0;width:80%;height:1px;position:absolute;z-index:1;background:#eeededea}.vtb-item-players .highlight:after,.vtb-item-players .vtb-player:last-child:after{display:none}.vtb-item-players .defeated{color:#939292}.vtb-item-players .winner.highlight{background-color:#8fbc8f;color:#fff}.vtb-item-players .defeated.highlight{background-color:#cd5c5c;color:#fff}.vtb-item-parent:after{position:absolute;content:\"\";width:25px;height:2px;left:0;top:50%;background-color:#aaa9a9;-webkit-transform:translateX(-100%);transform:translateX(-100%)}.vtb-item-children{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-right:24px;margin-right:-25px;border-right:1px dashed #33333330}.vtb-item-child,.vtb-item-children{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.vtb-item-child{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-top:2px;margin-bottom:2px}.vtb-item-children>.vtb-item-child:first-child{margin-top:0}.vtb-item-children>.vtb-item-child:last-child{margin-bottom:0}.vtb-item-child:before{right:0;-webkit-transform:translateX(100%);transform:translateX(100%);width:25px;height:2px}.vtb-item-child:after,.vtb-item-child:before{content:\"\";position:absolute;background-color:#aaa9a9;top:50%}.vtb-item-child:after{right:-25px;height:calc(50% + 22px);width:2px}.vtb-item-child:last-child:after{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.vtb-item-child:empty:before,.vtb-item-child:only-child:after,.vtb-item.top-left .vtb-item-child:before{display:none}.round-robin .vtb-item-child:after{height:200%}.round-robin .placeholder{height:20px}.round-robin .placeholder:before{display:none}.round-robin .placeholder .vtb-item{opacity:0}.round-robin .placeholder .vtb-item-child:before{display:none}.top-left{padding-top:20px}.round-title{position:absolute;top:0;text-align:center;font-size:13px;width:100%;color:#717171}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".vtb-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.vtb-item p{padding:20px;margin:0;background-color:#999}.vtb-item-parent{position:relative;margin-left:50px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.vtb-item-players{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#fff;margin:0;color:#000;border-radius:5px;border:1px solid #e5e4e4}.vtb-item-players .vtb-player{padding:10px;white-space:nowrap;position:relative}.vtb-item-players .vtb-player:after{content:\"\";bottom:0;left:10%;right:0;width:80%;height:1px;position:absolute;z-index:1;background:#eeededea}.vtb-item-players .highlight:after,.vtb-item-players .vtb-player:last-child:after{display:none}.vtb-item-players .defeated{color:#939292}.vtb-item-players .winner.highlight{background-color:#8fbc8f;color:#fff}.vtb-item-players .defeated.highlight{background-color:#cd5c5c;color:#fff}.vtb-item-parent:after{position:absolute;content:\"\";width:25px;height:2px;left:0;top:50%;background-color:#aaa9a9;-webkit-transform:translateX(-100%);transform:translateX(-100%)}.vtb-item-children{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding-right:24px;margin-right:-25px;border-right:1px dashed #33333330}.vtb-item-child,.vtb-item-children{display:-webkit-box;display:-ms-flexbox;display:flex;position:relative}.vtb-item-child{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.vtb-item-child:before{right:0;-webkit-transform:translateX(100%);transform:translateX(100%);width:25px;height:2px}.vtb-item-child:after,.vtb-item-child:before{content:\"\";position:absolute;background-color:#aaa9a9;top:50%}.vtb-item-child:after{right:-25px;height:calc(50% + 22px);width:2px}.vtb-item-child:last-child:after{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.vtb-item-child:empty:before,.vtb-item-child:only-child:after,.vtb-item.top-left .vtb-item-child:before{display:none}.round-robin .vtb-item-child:after{height:200%}.round-robin .placeholder{height:20px}.round-robin .placeholder:before{display:none}.round-robin .placeholder .vtb-item{opacity:0}.round-robin .placeholder .vtb-item-child:before{display:none}.top-left{padding-top:20px}.round-title{position:absolute;top:0;text-align:center;font-size:13px;width:100%;color:#717171}.vtb-item-leaf{padding-top:2px;padding-bottom:2px}.round-robin .vtb-item-leaf{padding-top:0;padding-bottom:0}.round-robin .vtb-item-child{padding-top:1px;padding-bottom:1px}.round-robin .vtb-item-child:after{height:100%!important;top:0;background-color:#aaa9a9}.top-left .vtb-item-child:after{top:20px}.round-robin .vtb-item-child:last-child:after{-webkit-transform:translateY(0);transform:translateY(0)}", ""]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -365,19 +365,19 @@ var update = add("52b62c68", content, true, {"sourceMap":false,"shadowMode":fals
 
 /***/ }),
 
-/***/ 6752:
+/***/ 4428:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(9104);
+var content = __webpack_require__(4952);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(8024)/* ["default"] */ .c)
-var update = add("6af23944", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("04849022", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -5727,11 +5727,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 }
 ;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=template&id=35604f1e
 
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=template&id=6010f80e
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=template&id=68067417
 
 
 
-var BracketNodevue_type_template_id_6010f80e_hoisted_1 = {
+var BracketNodevue_type_template_id_68067417_hoisted_1 = {
   key: 0,
   class: "round-title"
 };
@@ -5739,7 +5739,7 @@ var _hoisted_2 = {
   key: 0,
   class: "round-title"
 };
-function BracketNodevue_type_template_id_6010f80e_render(_ctx, _cache, $props, $setup, $data, $options) {
+function BracketNodevue_type_template_id_68067417_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_game_players = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.resolveComponent)("game-players");
   var _component_bracket_node = (0,external_commonjs_vue_commonjs2_vue_root_Vue_.resolveComponent)("bracket-node", true);
   return $options.playersArePresent ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
@@ -5747,7 +5747,7 @@ function BracketNodevue_type_template_id_6010f80e_render(_ctx, _cache, $props, $
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["vtb-item", [$options.isTopLeft($props.bracketNode)]])
   }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementVNode)("div", {
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)($options.getBracketNodeClass($props.bracketNode))
-  }, [!$props.bracketNode.gameIndex && $options.getBracketNodeClass($props.bracketNode) === 'vtb-item-parent' ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", BracketNodevue_type_template_id_6010f80e_hoisted_1, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.bracketNode.title), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_game_players, {
+  }, [!$props.bracketNode.gameIndex && $options.getBracketNodeClass($props.bracketNode) === 'vtb-item-parent' ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", BracketNodevue_type_template_id_68067417_hoisted_1, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.bracketNode.title), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_game_players, {
     "bracket-node": $props.bracketNode,
     "highlighted-player-id": $props.highlightedPlayerId,
     onOnSelectedPlayer: $options.highlightPlayer,
@@ -5779,7 +5779,7 @@ function BracketNodevue_type_template_id_6010f80e_render(_ctx, _cache, $props, $
     class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["vtb-item-children", [$options.getRoundRobinClass($props.bracketNode.games[0])]])
   }, [$props.bracketNode.games[0] ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
     key: 0,
-    class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["vtb-item-child", [$options.isPlaceHolder($props.bracketNode.games[0])]])
+    class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["vtb-item-child", [$options.isPlaceHolder($props.bracketNode.games[0]), $options.isNoChildren($props.bracketNode.games[0])]])
   }, [!$props.bracketNode.games[0].gameIndex && $props.bracketNode.games[0].round === 0 ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", _hoisted_2, (0,external_commonjs_vue_commonjs2_vue_root_Vue_.toDisplayString)($props.bracketNode.games[0].title), 1)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_bracket_node, {
     "bracket-node": $props.bracketNode.games[0],
     "highlighted-player-id": $props.highlightedPlayerId,
@@ -5809,7 +5809,7 @@ function BracketNodevue_type_template_id_6010f80e_render(_ctx, _cache, $props, $
     _: 3
   }, 8, ["bracket-node", "highlighted-player-id", "onOnSelectedPlayer", "onOnDeselectedPlayer"])], 2)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true), $props.bracketNode.games[1] ? ((0,external_commonjs_vue_commonjs2_vue_root_Vue_.openBlock)(), (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createElementBlock)("div", {
     key: 1,
-    class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["vtb-item-child", [$options.isPlaceHolder($props.bracketNode.games[1])]])
+    class: (0,external_commonjs_vue_commonjs2_vue_root_Vue_.normalizeClass)(["vtb-item-child", [$options.isPlaceHolder($props.bracketNode.games[1]), $options.isNoChildren($props.bracketNode.games[1])]])
   }, [(0,external_commonjs_vue_commonjs2_vue_root_Vue_.createVNode)(_component_bracket_node, {
     "bracket-node": $props.bracketNode.games[1],
     "highlighted-player-id": $props.highlightedPlayerId,
@@ -5839,7 +5839,7 @@ function BracketNodevue_type_template_id_6010f80e_render(_ctx, _cache, $props, $
     _: 3
   }, 8, ["bracket-node", "highlighted-player-id", "onOnSelectedPlayer", "onOnDeselectedPlayer"])], 2)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)], 2)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true)], 2)) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true);
 }
-;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=template&id=6010f80e
+;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=template&id=68067417
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/GamePlayers.vue?vue&type=template&id=23f7029d
 
@@ -5969,6 +5969,9 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.c)(GamePlayersvue_
     isPlaceHolder: function isPlaceHolder(bracketNode) {
       return bracketNode.placeholder ? 'placeholder' : '';
     },
+    isNoChildren: function isNoChildren(bracketNode) {
+      return bracketNode.games.length === 0 ? 'vtb-item-leaf' : '';
+    },
     highlightPlayer: function highlightPlayer(playerId) {
       this.$emit("onSelectedPlayer", playerId);
     },
@@ -5979,9 +5982,9 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.c)(GamePlayersvue_
 });
 ;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=style&index=0&id=6010f80e&lang=css
-var BracketNodevue_type_style_index_0_id_6010f80e_lang_css = __webpack_require__(6752);
-;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=style&index=0&id=6010f80e&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=style&index=0&id=68067417&lang=css
+var BracketNodevue_type_style_index_0_id_68067417_lang_css = __webpack_require__(4428);
+;// CONCATENATED MODULE: ./src/components/BracketNode.vue?vue&type=style&index=0&id=68067417&lang=css
 
 ;// CONCATENATED MODULE: ./src/components/BracketNode.vue
 
@@ -5991,7 +5994,7 @@ var BracketNodevue_type_style_index_0_id_6010f80e_lang_css = __webpack_require__
 ;
 
 
-const BracketNode_exports_ = /*#__PURE__*/(0,exportHelper/* default */.c)(BracketNodevue_type_script_lang_js, [['render',BracketNodevue_type_template_id_6010f80e_render]])
+const BracketNode_exports_ = /*#__PURE__*/(0,exportHelper/* default */.c)(BracketNodevue_type_script_lang_js, [['render',BracketNodevue_type_template_id_68067417_render]])
 
 /* harmony default export */ var BracketNode = (BracketNode_exports_);
 // EXTERNAL MODULE: ./src/components/recursiveBracket.js
