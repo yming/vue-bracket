@@ -157,10 +157,6 @@
         box-shadow: 2px 2px 6px 0px #dbdfdf;
     }
 
-    .vtb-item-players .vtb-players-box {
-        
-    }
-
     .vtb-item-players .vtb-player {
         padding: 10px;
         white-space: nowrap;
@@ -183,10 +179,6 @@
 
     .vtb-item-players .vtb-player:last-child:after {
         display: none;
-    }
-
-    .vtb-item-players .winner {
-        /* background-color: darkgreen; */
     }
 
     .vtb-item-players .defeated {
