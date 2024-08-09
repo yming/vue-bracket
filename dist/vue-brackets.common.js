@@ -86,7 +86,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ 4642:
+/***/ 3184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -339,19 +339,19 @@ exports.c = (sfc, props) => {
 
 /***/ }),
 
-/***/ 9984:
+/***/ 6372:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(4642);
+var content = __webpack_require__(3184);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(8024)/* ["default"] */ .c)
-var update = add("7c50c94a", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("c37e4e22", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -5668,7 +5668,7 @@ var es_regexp_exec = __webpack_require__(2644);
 var es_string_match = __webpack_require__(2888);
 ;// CONCATENATED MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject = require("vue");
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=template&id=35604f1e
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=template&id=17003e38
 
 
 
@@ -5707,7 +5707,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 3
   }, 8, ["bracket-node", "onOnSelectedPlayer", "onOnDeselectedPlayer", "highlighted-player-id"])])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_namespaceObject.createCommentVNode)("", true);
 }
-;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=template&id=35604f1e
+;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=template&id=17003e38
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=template&id=68067417
 
@@ -6005,19 +6005,19 @@ var recursiveBracket_default = /*#__PURE__*/__webpack_require__.n(components_rec
     }
   },
   methods: {
-    highlightPlayer: function highlightPlayer(id) {
-      this.highlightedPlayerId = id;
+    highlightPlayer: function highlightPlayer() {
+      // this.highlightedPlayerId = id;
     },
     unhighlightPlayer: function unhighlightPlayer() {
-      this.highlightedPlayerId = null;
+      // this.highlightedPlayerId = null;
     }
   }
 });
 ;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=style&index=0&id=35604f1e&lang=css
-var Bracketvue_type_style_index_0_id_35604f1e_lang_css = __webpack_require__(9984);
-;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=style&index=0&id=35604f1e&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-12.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=style&index=0&id=17003e38&lang=css
+var Bracketvue_type_style_index_0_id_17003e38_lang_css = __webpack_require__(6372);
+;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=style&index=0&id=17003e38&lang=css
 
 ;// CONCATENATED MODULE: ./src/Bracket.vue
 

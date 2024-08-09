@@ -44,11 +44,11 @@
             },
         },
         methods: {
-            highlightPlayer(id) {
-                this.highlightedPlayerId = id;
+            highlightPlayer() {
+                // this.highlightedPlayerId = id;
             },
             unhighlightPlayer() {
-                this.highlightedPlayerId = null;
+                // this.highlightedPlayerId = null;
             },
         },
     };

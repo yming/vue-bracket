@@ -96,7 +96,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ 7624:
+/***/ 2616:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -349,19 +349,19 @@ exports.c = (sfc, props) => {
 
 /***/ }),
 
-/***/ 2404:
+/***/ 924:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(7624);
+var content = __webpack_require__(2616);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.id, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = (__webpack_require__(8024)/* ["default"] */ .c)
-var update = add("52b62c68", content, true, {"sourceMap":false,"shadowMode":false});
+var update = add("0ed60d1e", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -2719,7 +2719,7 @@ var call = __webpack_require__(892);
 var fails = __webpack_require__(6040);
 var objectKeys = __webpack_require__(4152);
 var getOwnPropertySymbolsModule = __webpack_require__(8167);
-var propertyIsEnumerableModule = __webpack_require__(2460);
+var propertyIsEnumerableModule = __webpack_require__(80);
 var toObject = __webpack_require__(6804);
 var IndexedObject = __webpack_require__(6212);
 
@@ -2953,7 +2953,7 @@ exports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P
 
 var DESCRIPTORS = __webpack_require__(3528);
 var call = __webpack_require__(892);
-var propertyIsEnumerableModule = __webpack_require__(2460);
+var propertyIsEnumerableModule = __webpack_require__(80);
 var createPropertyDescriptor = __webpack_require__(9200);
 var toIndexedObject = __webpack_require__(9740);
 var toPropertyKey = __webpack_require__(8732);
@@ -3129,7 +3129,7 @@ module.exports = Object.keys || function keys(O) {
 
 /***/ }),
 
-/***/ 2460:
+/***/ 80:
 /***/ (function(__unused_webpack_module, exports) {
 
 "use strict";
@@ -4949,7 +4949,7 @@ var getOwnPropertySymbolsModule = __webpack_require__(8167);
 var getOwnPropertyDescriptorModule = __webpack_require__(4560);
 var definePropertyModule = __webpack_require__(368);
 var definePropertiesModule = __webpack_require__(5045);
-var propertyIsEnumerableModule = __webpack_require__(2460);
+var propertyIsEnumerableModule = __webpack_require__(80);
 var defineBuiltIn = __webpack_require__(3244);
 var defineBuiltInAccessor = __webpack_require__(1720);
 var shared = __webpack_require__(8196);
@@ -5686,7 +5686,7 @@ var es_regexp_exec = __webpack_require__(2644);
 var es_string_match = __webpack_require__(2888);
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__(9648);
-;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=template&id=35604f1e
+;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=template&id=17003e38
 
 
 
@@ -5725,7 +5725,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 3
   }, 8, ["bracket-node", "onOnSelectedPlayer", "onOnDeselectedPlayer", "highlighted-player-id"])])) : (0,external_commonjs_vue_commonjs2_vue_root_Vue_.createCommentVNode)("", true);
 }
-;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=template&id=35604f1e
+;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=template&id=17003e38
 
 ;// CONCATENATED MODULE: ./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-82.use[1]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/components/BracketNode.vue?vue&type=template&id=68067417
 
@@ -6023,19 +6023,19 @@ var recursiveBracket_default = /*#__PURE__*/__webpack_require__.n(components_rec
     }
   },
   methods: {
-    highlightPlayer: function highlightPlayer(id) {
-      this.highlightedPlayerId = id;
+    highlightPlayer: function highlightPlayer() {
+      // this.highlightedPlayerId = id;
     },
     unhighlightPlayer: function unhighlightPlayer() {
-      this.highlightedPlayerId = null;
+      // this.highlightedPlayerId = null;
     }
   }
 });
 ;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=style&index=0&id=35604f1e&lang=css
-var Bracketvue_type_style_index_0_id_35604f1e_lang_css = __webpack_require__(2404);
-;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=style&index=0&id=35604f1e&lang=css
+// EXTERNAL MODULE: ./node_modules/vue-style-loader/index.js??clonedRuleSet-54.use[0]!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-54.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[2]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-54.use[3]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./src/Bracket.vue?vue&type=style&index=0&id=17003e38&lang=css
+var Bracketvue_type_style_index_0_id_17003e38_lang_css = __webpack_require__(924);
+;// CONCATENATED MODULE: ./src/Bracket.vue?vue&type=style&index=0&id=17003e38&lang=css
 
 ;// CONCATENATED MODULE: ./src/Bracket.vue
 
