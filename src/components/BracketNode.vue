@@ -335,4 +335,89 @@
     .round-robin .vtb-item-child:last-child:after {
         transform: translateY(0%);
     }
+
+    /* 附加赛 */
+    .extra {
+        .vtb-item {
+            flex-direction: row !important;
+        }
+
+        .vtb-item-parent {
+            margin-left: 0;
+            margin-right: 50px;
+        }
+
+        .vtb-item-parent:after {
+            width: 0 !important;
+        }
+
+        .vtb-item-parent:before {
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 2px;
+            right: 0;
+            top: 50%;
+            background-color: rgb(170, 169, 169);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+
+        .vtb-item-children {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: relative;
+            padding-left: 24px;
+            margin-left: -25px;
+            border-left: 1px dashed #33333330;
+            border-right: none;
+        }
+
+        .vtb-item-child:before {
+            content: "";
+            position: absolute;
+            background-color: rgb(170, 169, 169);
+            right: auto;
+            left: 0;
+            top: 50%;
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            width: 25px;
+            height: 2px;
+        }
+
+        .vtb-item-child:last-child:after {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+        }
+
+
+        .vtb-item-child:after {
+            content: "";
+            position: absolute;
+            background-color: rgb(170, 169, 169);
+            left: -25px;
+            height: calc(50% + 22px);
+            width: 2px;
+            top: 50%;
+        }
+
+        .vtb-item-leaf {
+            .round-title {
+                display: none;
+            }
+            .vtb-item {
+                width: 0;
+                overflow: hidden;
+            }
+        }
+    }
 </style>

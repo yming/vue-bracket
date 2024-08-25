@@ -1,15 +1,32 @@
 <template>
-    <bracket :rounds="rounds">
-        <template #player-extension-top="{ match }">
-            <div v-if="match.top" class="top-box">{{ match.top }}</div>
-        </template>
-        <template #player="{ player, match }">
-            {{ player.name }}{{ match.single || '' }}
-        </template>
-        <template #player-extension-bottom="{ match }">
-            <div v-if="match.bottom" class="bottom-box">{{ match.bottom }}</div>
-        </template>
-    </bracket>
+    <div style="display: flex;justify-content: justify-start;">
+        <div class="extra">
+            <bracket :rounds="rounds_extra">
+                <template #player-extension-top="{ match }">
+                    <div v-if="match.top" class="top-box">{{ match.top }}</div>
+                </template>
+                <template #player="{ player, match }">
+                    {{ player.name }}{{ match.single || '' }}
+                </template>
+                <template #player-extension-bottom="{ match }">
+                    <div v-if="match.bottom" class="bottom-box">{{ match.bottom }}</div>
+                </template>
+            </bracket>
+        </div>
+        <div>
+            <bracket :rounds="rounds">
+                <template #player-extension-top="{ match }">
+                    <div v-if="match.top" class="top-box">{{ match.top }}</div>
+                </template>
+                <template #player="{ player, match }">
+                    {{ player.name }}{{ match.single || '' }}
+                </template>
+                <template #player-extension-bottom="{ match }">
+                    <div v-if="match.bottom" class="bottom-box">{{ match.bottom }}</div>
+                </template>
+            </bracket>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -63,7 +80,7 @@ const rounds_x = [
     },
 ];
 
-const rounds = [
+const rounds_y = [
     // Round Robin
     {
         title: "小组循环",
@@ -185,7 +202,163 @@ const rounds = [
     },
 ];
 
-console.log(rounds_x);
+const rounds = [
+    // Quarter
+    {
+        title: "1/4决赛",
+        games: [
+            {
+                // top: '中央球场',
+                players: [
+                    { id: "1", name: "Competitor 1", winner: false },
+                    { id: "5", name: "Competitor 5", winner: true },
+                ],
+                // scores: [1,2,3,4],
+                // bottom: '6:3 2:6 7:5'
+            },
+            {
+                players: [
+                    { id: "2", name: "Competitor 2", winner: false },
+                    { id: "6", name: "Competitor 6", winner: true },
+                ],
+            },
+            {
+                players: [
+                    { id: "3", name: "Competitor 3", winner: false },
+                    { id: "7", name: "Competitor 7", winner: true },
+                ],
+            },
+            {
+                players: [
+                    { id: "4", name: "Competitor 4", winner: false },
+                    { id: "8", name: "Competitor 8", winner: true },
+                ],
+            },
+        ],
+    },
+    // Semi
+    {
+        title: "半决赛",
+        games: [
+            {
+                players: [
+                    { id: "5", name: "Competitor 5", winner: false },
+                    { id: "6", name: "Competitor 6", winner: true },
+                ],
+            },
+            {
+                players: [
+                    { id: "7", name: "Competitor 7", winner: false },
+                    { id: "8", name: "Competitor 8", winner: true },
+                ],
+            },
+        ],
+    },
+    // Third place play off
+    {
+        title: "3、4名决赛",
+        games: [
+            {
+                players: [
+                    { id: "5", name: "Competitor 5", winner: false },
+                    { id: "7", name: "Competitor 7", winner: true },
+                ],
+            },
+        ],
+    },
+    // Final
+    {
+        title: "决赛",
+        games: [
+            {
+                players: [
+                    { id: "6", name: "Competitor 6", winner: false },
+                    { id: "8", name: "Competitor 8", winner: true },
+                ],
+            },
+        ],
+    },
+];
+
+    // Semi
+const rounds_extra = [
+    // Quarter
+    {
+        title: "1/4决赛",
+        games: [
+            {
+                // top: '中央球场',
+                players: [
+                    { id: "1", name: "Competitor 1", winner: false },
+                    { id: "5", name: "Competitor 5", winner: true },
+                ],
+                // scores: [1,2,3,4],
+                // bottom: '6:3 2:6 7:5'
+            },
+            {
+                players: [
+                    { id: "2", name: "Competitor 2", winner: false },
+                    { id: "6", name: "Competitor 6", winner: true },
+                ],
+            },
+            {
+                players: [
+                    { id: "3", name: "Competitor 3", winner: false },
+                    { id: "7", name: "Competitor 7", winner: true },
+                ],
+            },
+            {
+                players: [
+                    { id: "4", name: "Competitor 4", winner: false },
+                    { id: "8", name: "Competitor 8", winner: true },
+                ],
+            },
+        ],
+    },
+    {
+        title: "附加：争5-8名",
+        games: [
+            {
+                players: [
+                    { id: "5", name: "Competitor 1", winner: false },
+                    { id: "6", name: "Competitor 2", winner: true },
+                ],
+            },
+            {
+                players: [
+                    { id: "7", name: "Competitor 3", winner: false },
+                    { id: "8", name: "Competitor 4", winner: true },
+                ],
+            },
+        ],
+    },
+    // Third place play off
+    {
+        title: "附加：争7、8名",
+        games: [
+            {
+                players: [
+                    { id: "5", name: "Competitor 1", winner: false },
+                    { id: "7", name: "Competitor 3", winner: true },
+                ],
+            },
+        ],
+    },
+    // Final
+    {
+        title: "附加：争5、6名",
+        games: [
+            {
+                players: [
+                    { id: "6", name: "Competitor 2", winner: false },
+                    { id: "8", name: "Competitor 4", winner: true },
+                ],
+            },
+        ],
+    },
+];
+
+console.log(rounds_x, rounds_y);
 
 export default {
     name: "app",
@@ -195,6 +368,7 @@ export default {
     data() {
         return {
             rounds: rounds,
+            rounds_extra: rounds_extra,
         };
     },
 };
@@ -238,4 +412,8 @@ export default {
         z-index: 1;
         background: #eeededea;
     }
+
+
+
+
 </style>
