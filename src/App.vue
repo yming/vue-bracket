@@ -1,6 +1,6 @@
 <template>
     <div style="display: flex;justify-content: justify-start;">
-        <div class="extra">
+        <div class="extra" v-if="rounds_extra">
             <bracket :rounds="rounds_extra">
                 <template #player-extension-top="{ match }">
                     <div v-if="match.top" class="top-box">{{ match.top }}</div>

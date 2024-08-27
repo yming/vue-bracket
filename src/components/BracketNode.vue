@@ -116,6 +116,9 @@
                     return '';
                 }
             },
+            getRoundTitle() {
+
+            },
             isPlaceHolder(bracketNode) {
                 return bracketNode.placeholder ? 'placeholder' : '';
             },
