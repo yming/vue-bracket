@@ -2,7 +2,8 @@
     <div class="vtb-item" :class="[isTopLeft(bracketNode)]" v-if="playersArePresent">
         <div :class="getBracketNodeClass(bracketNode)">
             <!-- Round Title -->
-            <div class="round-title" v-if="!bracketNode.gameIndex && getBracketNodeClass(bracketNode) === 'vtb-item-parent'">{{ bracketNode.title }}</div>
+            <!-- <div class="round-title" v-if="!bracketNode.gameIndex && getBracketNodeClass(bracketNode) === 'vtb-item-parent'">{{ bracketNode.title }}</div> -->
+            <div class="round-title" v-if="!bracketNode.gameIndex">{{ bracketNode.title }}</div>
             <game-players
                 :bracket-node="bracketNode"
                 :highlighted-player-id="highlightedPlayerId"
@@ -24,7 +25,7 @@
         <div v-if="bracketNode.games[0] || bracketNode.games[1]" class="vtb-item-children" :class="[getRoundRobinClass(bracketNode.games[0])]">
             <div class="vtb-item-child" v-if="bracketNode.games[0]" :class="[isPlaceHolder(bracketNode.games[0]), isNoChildren(bracketNode.games[0])]">
                 <!-- Round Title -->
-                <div class="round-title" v-if="!bracketNode.games[0].gameIndex && (bracketNode.games[0].round === 0)">{{ bracketNode.games[0].title }}</div>
+                <!-- <div class="round-title" v-if="!bracketNode.games[0].gameIndex && (bracketNode.games[0].round === 0)">{{ bracketNode.games[0].title }}</div> -->
                 <bracket-node
                     :bracket-node="bracketNode.games[0]"
                     :highlighted-player-id="highlightedPlayerId"
@@ -110,7 +111,7 @@
             },
 
             isTopLeft(bracketNode) {
-                if(bracketNode.round === 0 && bracketNode.gameIndex === 0) {
+                if(bracketNode.games.length === 0 && bracketNode.gameIndex === 0) {
                     return 'top-left';
                 } else {
                     return '';
@@ -296,10 +297,6 @@
         display: none;
     }
 
-    .top-left {
-        padding-top: 20px;
-    }
-
     .round-title {
         position: absolute;
         top: 0;
@@ -309,15 +306,19 @@
         color: rgb(113, 113, 113);
     }
 
+    .top-left {
+        .vtb-item-players {
+            margin-top: 30px;
+        }
+    }
+
     /* 签表覆盖样式 */
     .vtb-item-leaf {
-        padding-top: 2px;
-        padding-bottom: 2px;
+        margin-bottom: 4px;
     }
 
     .round-robin .vtb-item-leaf {
-        padding-top: 0;
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .round-robin .vtb-item-child {
