@@ -327,7 +327,7 @@
     }
 
     .round-robin .vtb-item-child:after {
-        height: 100% !important;
+        height: 105%;
         top: 0;
         background-color: rgb(170, 169, 169);;
     }
