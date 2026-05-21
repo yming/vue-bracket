@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.git/
+.gitignore
+.eslintrc.js
+.prettierrc
+babel.config.js
+vue.config.js
+public/
+src/App.vue
+src/main.js
+test/

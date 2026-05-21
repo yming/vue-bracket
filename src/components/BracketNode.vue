@@ -110,13 +110,7 @@
                 return bracketNode && bracketNode.type === 'roundRobin' ? 'round-robin' : '';
             },
 
-            isTopLeft(bracketNode) {
-                if(bracketNode.games.length === 0 && bracketNode.gameIndex === 0) {
-                    return 'top-left';
-                } else {
-                    return '';
-                }
-            },
+            
             getRoundTitle() {
 
             },
@@ -272,10 +266,6 @@
         display: none;
     }
 
-    .vtb-item.top-left .vtb-item-child:before {
-        display: none;
-    }
-
     .round-robin .vtb-item-child:after {
         height: 200%;
     }
@@ -306,14 +296,7 @@
         color: rgb(113, 113, 113);
     }
 
-    .top-left {
-        .vtb-item-players {
-            margin-top: 30px;
-        }
-    }
-
-    /* 签表覆盖样式 */
-    .vtb-item-leaf {
+    .round-robin .vtb-item-child:after {
         margin-bottom: 4px;
     }
 
@@ -330,10 +313,6 @@
         height: 105%;
         top: 0;
         background-color: rgb(170, 169, 169);;
-    }
-
-    .top-left .vtb-item-child:after {
-        top: 20px;
     }
 
     .round-robin .vtb-item-child:last-child:after {

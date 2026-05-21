@@ -12,6 +12,7 @@ module.exports = {
     },
     plugins: ["vue", "mocha"],
     rules: {
+        "no-unused-vars": "off",
         "no-extra-boolean-cast": "off",
         "max-params": ["error", 4],
         "max-statements": ["error", 30],

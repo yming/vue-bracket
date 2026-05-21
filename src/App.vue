@@ -483,18 +483,21 @@ export default {
         async getDrawData() {
             let sectionId = document.location.search.split('=')[1];
             sectionId = sectionId || '341984566057109154';
-            // const sectionId = '222371';
-            // sectionId = '350432587778360184';
             if (!sectionId) { return; }
             const token = `Bearer eyJpdiI6IitEVjluZ3lGdzBhU3RFQWV1MWdCR0E9PSIsInZhbHVlIjoiRmFyc01MK3lmb3l2di9nZGU2UisrZ2crdTBNdVN4Q1pWT0ZUanc5UUNxZVNMdWhSNGlYd0NOVytsMVV3Q2kwRSIsIm1hYyI6IjExMzY3YzhhNGNhM2YwNDhlMjdiMjJjNDljMGQ5MGMxNDMxMDY5ZTY3OTIxMjU1NWFlMzU1MDBhY2Q3NjZlNjYiLCJ0YWciOiIifQ==`;
-            const ret = await axios.get("/api/tennis/section/draw", {
-                headers: {
-                    'Authorization': token,
-                },
-                params: { sectionId },
-            });
-
-            this.rounds = ret.data.data.rounds;
+            try {
+                const ret = await axios.get("/api/tennis/section/draw", {
+                    headers: {
+                        'Authorization': token,
+                    },
+                    params: { sectionId },
+                });
+                if (ret && ret.data && ret.data.data && ret.data.data.rounds) {
+                    this.rounds = ret.data.data.rounds;
+                }
+            } catch (error) {
+                console.error('Failed to fetch draw data:', error);
+            }
         }
     }
 };
