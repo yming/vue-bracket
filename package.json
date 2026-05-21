@@ -2,7 +2,10 @@
   "name": "vue-brackets",
   "version": "1.0.14",
   "license": "MIT",
-  "repository": "https://github.com/yming/vue-bracket",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yming/vue-bracket.git"
+  },
   "author": "Yang <ym1161@gmail.com>",
   "description": "Vue component for rendering single elemination tournament brackets.",
   "main": "dist/vue-brackets.common.js",

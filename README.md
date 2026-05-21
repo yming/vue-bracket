@@ -230,6 +230,7 @@ npm run build
 git commit
 npm version <version>
 git push
+npm login
 npm publish --access=public
 ```
 

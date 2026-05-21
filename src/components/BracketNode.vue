@@ -1,5 +1,5 @@
 <template>
-    <div class="vtb-item" :class="[isTopLeft(bracketNode)]" v-if="playersArePresent">
+    <div class="vtb-item" v-if="playersArePresent">
         <div :class="getBracketNodeClass(bracketNode)">
             <!-- Round Title -->
             <!-- <div class="round-title" v-if="!bracketNode.gameIndex && getBracketNodeClass(bracketNode) === 'vtb-item-parent'">{{ bracketNode.title }}</div> -->
